@@ -1,0 +1,71 @@
+:root {
+    --wh: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: monospace;
+    outline: none;
+}
+
+main {
+    height: var(--wh);
+    width: 100%;
+}
+
+main {
+    background-image: url(../res/bg3.jpeg);
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#header {
+    padding: calc(var(--wh) * 0.02) 5% 0 5%;
+    width: 90%;
+}
+
+#title {
+    font-size: calc(var(--wh) * 0.06);
+}
+
+form {
+    height: calc(var(--wh) * 0.8);
+    width: 90vw;
+    margin-bottom: calc(var(--wh) * 0.05);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center stretch;
+}
+
+.inp-section {
+    padding: calc(var(--wh) * 0.02) 4vw;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 0.2fr;
+    border: 1px solid;
+    backdrop-filter: blur(10px) saturate(120%);
+}
+
+.inp-heading {
+    font-size: calc(var(--wh) * 0.035);
+    margin-left: 2vw;
+}
+
+.inp-section > img {
+    width: calc(var(--wh) * 0.04);
+    margin: auto;
+}
+
+.inp-field {
+    color: black;
+    margin-top: calc(var(--wh) * 0.015);
+    font-size: calc(var(--wh) * 0.027);
+    padding: calc(var(--wh) * 0.007) 3vw;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
